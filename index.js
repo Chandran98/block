@@ -9,11 +9,11 @@ app.use(bodyParser.json());
 
 // app.use(cors());
 app.use("/", (req, res) => {
-    res.status(200).json({ message: "Busted" ,code:"0"});
-  });
-  app.use("/kex", (req, res) => {
     res.status(200).json({ message: "Busted" ,code:"1"});
   });
+  // app.use("/kex", (req, res) => {
+  //   res.status(200).json({ message: "Busted" ,code:"1"});
+  // });
 
 
 //  0 - to stop Vpe
