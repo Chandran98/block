@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // app.use(cors());
-app.use("/api/block", (req, res) => {
+app.use("/", (req, res) => {
     res.status(200).json({ message: "Busted" ,code:"1"});
   });
 
