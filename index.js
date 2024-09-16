@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 
 // app.use(cors());
 app.use("/", (req, res) => {
-    res.status(200).json({ message: "Normal" ,code:"2",payout:"0",payin:"0",});
+    res.status(200).json({ message: "Normal" ,code:"2",payout:"1",payin:"1",});
   });
   // app.use("/kex", (req, res) => {
   //   res.status(200).json({ message: "Busted" ,code:"1"});
@@ -22,6 +22,7 @@ app.use("/", (req, res) => {
 
 //  2 - to normal run both
 
+//  1 - to stop payin & payOut
 
 app.all("*", (req, res) => {
     res.status(404);
